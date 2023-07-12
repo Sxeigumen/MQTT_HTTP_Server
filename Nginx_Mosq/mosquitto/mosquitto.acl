@@ -1,5 +1,3 @@
-user admin
-topic readwrite#
-
-user writer
-topic write#
+user Controller
+topic gamedata
+topic instructions
