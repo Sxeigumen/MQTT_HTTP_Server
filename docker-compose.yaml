@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.5'
 
 services:
   mosquitto:
@@ -11,16 +11,17 @@ services:
     volumes:
       - ./Nginx_Mosq/mosquitto/config:/mosquitto/config
       - ./Nginx_Mosq/mosquitto/data:/mosquitto/data
+      - ./Nginx_Mosq/mosquitto/passwd:/etc/mosquitto/passwd
+      - ./Nginx_Mosq/mosquitto/mosquitto.acl:/etc/mosquitto/mosquitto.acl
       - ./logs/mosquitto/:/mosquitto/log
     networks:
       - mosquitto-net
 
   proxy1:
-    container_name: proxi1
+    container_name: proxy1
     image: nginx:stable
     restart: always
     ports:
-      - "80:80"
       - "80:80"
       - "443:443"
     volumes:
