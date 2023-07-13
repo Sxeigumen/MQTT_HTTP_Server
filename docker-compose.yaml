@@ -6,8 +6,8 @@ services:
     image: eclipse-mosquitto:latest
     restart: always
     ports:
-      - "1883:1883"
-      - "9001:9001"
+      - 1883:1883
+      - 9001:9001
     volumes:
       - ./Nginx_Mosq/mosquitto/config:/mosquitto/config
       - ./Nginx_Mosq/mosquitto/data:/mosquitto/data
