@@ -17,8 +17,8 @@ services:
     networks:
       - mosquitto-net
 
-  proxy1:
-    container_name: proxy1
+  proxy:
+    container_name: proxy
     image: nginx:stable
     restart: always
     ports:
