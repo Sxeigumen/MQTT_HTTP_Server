@@ -1,0 +1,21 @@
+2023-07-24 13:14:55,014 INFO MQQT successful connection: 192.168.220.2:1883
+2023-07-24 13:14:55,014 INFO MQQT successful subscribe: [('gamedata', 1), ('instruction', 1)]
+2023-07-24 13:14:55,014 INFO Connect with broker
+2023-07-24 13:15:21,083 INFO Successful connection: ('192.168.220.3', 49722)
+2023-07-24 13:15:21,084 INFO Successful request parsing
+2023-07-24 13:15:21,084 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
+2023-07-24 13:15:21,084 INFO Send TEMSSEEPCH to topic instruction
+2023-07-24 13:15:21,084 INFO MQQT answer Hello_World
+2023-07-24 13:15:21,085 INFO Data published
+2023-07-24 13:15:24,641 INFO Successful connection: ('192.168.220.3', 49726)
+2023-07-24 13:15:24,641 INFO Successful request parsing
+2023-07-24 13:15:24,642 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
+2023-07-24 13:15:24,642 INFO Send TEMSSEEPCH to topic instruction
+2023-07-24 13:15:24,642 INFO MQQT answer TEMSSEEPCH
+2023-07-24 13:15:24,643 INFO Data published
+2023-07-24 13:16:25,250 INFO Successful connection: ('192.168.220.3', 54142)
+2023-07-24 13:16:25,251 INFO Successful request parsing
+2023-07-24 13:16:25,251 INFO HTTP message: Topic: /Instructions, Info: TEMSSEEPCH
+2023-07-24 13:16:25,251 INFO Send TEMSSEEPCH to topic /Instructions
+2023-07-24 13:16:25,251 INFO MQQT answer TEMSSEEPCH
+2023-07-24 13:16:25,252 INFO Data published

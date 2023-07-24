@@ -1,16 +1,28 @@
 import socket
 from email import parser
+import mqtt_module
+import time
+import threading
+from _thread import *
+import logg
 
 MAX_LINE = 64 * 1024
 MAX_HEADER = 100
 
+#Brocker info
+broker_ip = '192.168.220.2'
+port1 = 1883
 
-class Response:
-    def __init__(self, status, reason, headers=None, body=None):
-        self.status = status
-        self.reason = reason
-        self.headers = headers
-        self.body = body
+#Client-Server info
+topics = [
+    ('gamedata', 1),
+    ('instruction', 1)
+]
+
+client_id = f'publish-1'
+
+username = 'Kyala'
+password = '123'
 
 
 class Request:
@@ -24,20 +36,27 @@ class Request:
 
 
 class Request_message:
-    def __init__(self, type, device, data, device_ip):
-        self.type = type
-        self.device = device
-        self.device_ip = device_ip
-        self.data = data
-
+    def __init__(self, topic, info):
+        self.topic = topic
+        self.info = info
 
 class Server:
     def __init__(self, ip, port, server_name):
         self.ip = ip
         self.port = port
         self.server_name = server_name
+        self.client = mqtt_module.mqtt_unit(broker_ip, port1, client_id, topics, username, password)
+
+    def mqtt_enable(self):
+        self.client.connect()
+        self.client.subscribe()
+        self.client.client.loop_start()
+
 
     def server_enable(self):
+        mqtt_thread = threading.Thread(target=self.mqtt_enable())
+        mqtt_thread.start()
+
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM, proto=0)
 
         try:
@@ -47,24 +66,32 @@ class Server:
             while True:
                 new_socket, from_addr = server_socket.accept()
                 self.socket = new_socket
+                logg.server_logger.info(f'Successful connection: {from_addr}')
 
                 try:
                     self.server_client(new_socket)
                 except Exception as e:
-                    print('Client serving failed')
+                    logg.server_logger.exception(f'Client serving failed {from_addr}')
+                    #print('Client serving failed')
         finally:
-            print('Server sucking cock')
+            self.client.client.disconnect()
+            self.client.client.loop_stop()
+            #print('Server died')
             server_socket.close()
+            logg.server_logger.exception(f'Server died')
 
     def server_client(self, socket):
         try:
             request = self.parse_request(socket)
+            logg.server_logger.info(f'Successful request parsing')
             response = self.handle_request(request)
             # self.send_response(socket, response)
 
         except ConnectionResetError:
             socket = None
+            logg.server_logger.exception(f'Connection reset erorr')
         except Exception as e:
+            logg.server_logger.exception(f'Erorr: {e}')
             self.send_error(socket, e)
         if socket:
             socket.close()
@@ -75,15 +102,32 @@ class Server:
         headers = self.parse_request_header(rfile)
         host = headers.get('Host')
         if version != 'HTTP/1.1' and version != 'HTTP/1.2':
-            raise Exception(f'Unexpected HTTP version - {headers}')
+            logg.server_logger.exception(f'Unexpected HTTP version')
+            raise Exception(f'Unexpected HTTP version')
         if not host:
+            logg.server_logger.exception(f'Bad request')
             raise Exception('Bad request')
-        if host not in (self.server_name, f'{self.ip}:{self.port}'):
-            raise Exception(f'Not right connection - exected {self.ip}:{self.port} not {host}')
+        #if host not in (self.server_name, f'{self.ip}:{self.port}'):
+            #logg.server_logger.exception(f'Not right connection')
+            #raise Exception(f'Not right connection')
         return Request(method, uri, version, headers, rfile, headers.get('X-Forwarded-For'))
 
     def handle_request(self, request):
-        print(request.headers, request.ip)
+        message_info = Request_message(request.headers.get('Topic'), request.headers.get('Info'))
+        logg.server_logger.info(f'HTTP message: Topic: {message_info.topic}, Info: {message_info.info}')
+        #print(message_info.topic, message_info.info)
+        try:
+            self.client.publish_message(message_info.topic, message_info.info)
+            while True:
+                if mqtt_module.global_message != "":
+                    logg.server_logger.info(f'MQQT answer {mqtt_module.global_message}')
+                    #print(mqtt_module.global_message)
+                    break
+                mqtt_module.global_message = ""
+        except:
+            mqtt_module.global_message = ""
+            logg.server_logger.exception(f'MQTT Error')
+            #print('MQTT Error')
 
     def parse_request_header(self, rfile):
         headers = []
@@ -112,9 +156,8 @@ class Server:
 
 
 def main():
-    server = Server('10.0.41.59', 10241, 'Opa')
+    server = Server('192.168.220.4', 112, 'proxy')
     server.server_enable()
-
 
 if __name__ == "__main__":
     main()
