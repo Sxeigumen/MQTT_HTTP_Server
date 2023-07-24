@@ -19,11 +19,12 @@ topics = [
     ('instruction', 1)
 ]
 
-#client info
+#Сlient info
 client_id = 'publish-1'
 username = 'Kyala'
 password = '123'
 
+#Change to host IP
 machine_ip = '10.0.41.64'
 
 
@@ -86,7 +87,7 @@ class Server:
         try:
             request = self.parse_request(socket)
             logg.server_logger.info(f'Successful request parsing')
-            response = self.handle_request(request)
+            response = self.handle_request(socket, request)
             # self.send_response(socket, response)
 
         except ConnectionResetError:
@@ -115,10 +116,10 @@ class Server:
         if host not in (self.server_name, f'{self.ip}', machine_ip):
             logg.server_logger.exception(f'Not right connection: {host} != {self.server_name}, {self.ip}, {machine_ip}')
             raise Exception(f'Not right connection')
-        logg.server_logger.info(f'Request: {method}, {uri}, {version}, {headers}, {headers.get("X-Forwarded-For")}')
-        return Request(method, uri, version, headers, rfile, headers.get('X-Forwarded-For'))
+        logg.server_logger.info(f'Request: {method}, {uri}, {version}, {headers}, {headers.get("X-Real-IP")}')
+        return Request(method, uri, version, headers, rfile, headers.get('X-Real-IP'))
 
-    def handle_request(self, request):
+    def handle_request(self, socket, request):
         message_info = Request_message(request.headers.get('Topic'), request.headers.get('Info'))
         logg.server_logger.info(f'HTTP message: Topic: {message_info.topic}, Info: {message_info.info}')
         #print(message_info.topic, message_info.info)
@@ -129,7 +130,12 @@ class Server:
                     logg.server_logger.info(f'MQQT answer {mqtt_module.global_message}')
                     #print(mqtt_module.global_message)
                     break
-                mqtt_module.global_message = ""
+            data = f'GET /device HTTP/1.1\r\n' \
+            f'Host: {request.ip}\r\n' \
+            f'Info: {mqtt_module.global_message} \r\n' \
+            '\r\n'
+            socket.sendall(bytes(data, encoding='utf-8'))
+            mqtt_module.global_message = ""
         except:
             mqtt_module.global_message = ""
             logg.server_logger.exception(f'MQTT Error')
@@ -161,7 +167,10 @@ class Server:
         return words
 
 
+
+
 def main():
+    #Change to docker container ip and port
     server = Server('192.168.220.4', 10101, 'proxy')
     server.server_enable()
 
