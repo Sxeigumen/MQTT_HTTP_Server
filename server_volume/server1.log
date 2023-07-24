@@ -1,21 +1,59 @@
-2023-07-24 13:14:55,014 INFO MQQT successful connection: 192.168.220.2:1883
-2023-07-24 13:14:55,014 INFO MQQT successful subscribe: [('gamedata', 1), ('instruction', 1)]
-2023-07-24 13:14:55,014 INFO Connect with broker
-2023-07-24 13:15:21,083 INFO Successful connection: ('192.168.220.3', 49722)
-2023-07-24 13:15:21,084 INFO Successful request parsing
-2023-07-24 13:15:21,084 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
-2023-07-24 13:15:21,084 INFO Send TEMSSEEPCH to topic instruction
-2023-07-24 13:15:21,084 INFO MQQT answer Hello_World
-2023-07-24 13:15:21,085 INFO Data published
-2023-07-24 13:15:24,641 INFO Successful connection: ('192.168.220.3', 49726)
-2023-07-24 13:15:24,641 INFO Successful request parsing
-2023-07-24 13:15:24,642 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
-2023-07-24 13:15:24,642 INFO Send TEMSSEEPCH to topic instruction
-2023-07-24 13:15:24,642 INFO MQQT answer TEMSSEEPCH
-2023-07-24 13:15:24,643 INFO Data published
-2023-07-24 13:16:25,250 INFO Successful connection: ('192.168.220.3', 54142)
-2023-07-24 13:16:25,251 INFO Successful request parsing
-2023-07-24 13:16:25,251 INFO HTTP message: Topic: /Instructions, Info: TEMSSEEPCH
-2023-07-24 13:16:25,251 INFO Send TEMSSEEPCH to topic /Instructions
-2023-07-24 13:16:25,251 INFO MQQT answer TEMSSEEPCH
-2023-07-24 13:16:25,252 INFO Data published
+2023-07-24 14:14:23,612 INFO MQQT successful connection: 192.168.220.2:1883
+2023-07-24 14:14:23,613 INFO MQQT successful subscribe: [('gamedata', 1), ('instruction', 1)]
+2023-07-24 14:14:23,613 INFO Connect with broker
+2023-07-24 14:16:53,250 INFO Successful connection: ('192.168.220.3', 58612)
+2023-07-24 14:16:53,254 INFO Request: GET, /device, HTTP/1.1, Host: 10.0.41.64
+X-Real-IP: 10.0.41.165
+Connection: close
+Device: Controller
+Topic: instruction
+Info: TEMSSEEPCH
+
+, None
+2023-07-24 14:16:53,254 INFO Successful request parsing
+2023-07-24 14:16:53,254 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
+2023-07-24 14:16:53,255 INFO Send TEMSSEEPCH to topic instruction
+2023-07-24 14:16:53,265 INFO Data published
+2023-07-24 14:16:53,271 INFO MQQT answer TEMSSEEPCH
+2023-07-24 14:17:15,656 INFO Successful connection: ('192.168.220.3', 33632)
+2023-07-24 14:17:15,657 INFO Request: GET, /device, HTTP/1.1, Host: 10.0.41.64
+X-Real-IP: 10.0.41.165
+Connection: close
+Device: Controller
+Topic: instruction
+Info: TEMSSEEPCH
+
+, None
+2023-07-24 14:17:15,658 INFO Successful request parsing
+2023-07-24 14:17:15,658 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
+2023-07-24 14:17:15,658 INFO Send TEMSSEEPCH to topic instruction
+2023-07-24 14:17:15,658 INFO MQQT answer Hello_World
+2023-07-24 14:17:15,659 INFO Data published
+2023-07-24 14:17:18,058 INFO Successful connection: ('192.168.220.3', 33638)
+2023-07-24 14:17:18,060 INFO Request: GET, /device, HTTP/1.1, Host: 10.0.41.64
+X-Real-IP: 10.0.41.165
+Connection: close
+Device: Controller
+Topic: instruction
+Info: TEMSSEEPCH
+
+, None
+2023-07-24 14:17:18,060 INFO Successful request parsing
+2023-07-24 14:17:18,060 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
+2023-07-24 14:17:18,060 INFO Send TEMSSEEPCH to topic instruction
+2023-07-24 14:17:18,061 INFO MQQT answer TEMSSEEPCH
+2023-07-24 14:17:18,061 INFO Data published
+2023-07-24 14:17:19,596 INFO Successful connection: ('192.168.220.3', 34994)
+2023-07-24 14:17:19,597 INFO Request: GET, /device, HTTP/1.1, Host: 10.0.41.64
+X-Real-IP: 10.0.41.165
+Connection: close
+Device: Controller
+Topic: instruction
+Info: TEMSSEEPCH
+
+, None
+2023-07-24 14:17:19,597 INFO Successful request parsing
+2023-07-24 14:17:19,598 INFO HTTP message: Topic: instruction, Info: TEMSSEEPCH
+2023-07-24 14:17:19,598 INFO Send TEMSSEEPCH to topic instruction
+2023-07-24 14:17:19,598 INFO MQQT answer TEMSSEEPCH
+2023-07-24 14:17:19,599 INFO Data published

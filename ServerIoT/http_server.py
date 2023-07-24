@@ -19,10 +19,12 @@ topics = [
     ('instruction', 1)
 ]
 
-client_id = f'publish-1'
-
+#client info
+client_id = 'publish-1'
 username = 'Kyala'
 password = '123'
+
+machine_ip = '10.0.41.64'
 
 
 class Request:
@@ -108,8 +110,12 @@ class Server:
             logg.server_logger.exception(f'Bad request')
             raise Exception('Bad request')
         #if host not in (self.server_name, f'{self.ip}:{self.port}'):
-            #logg.server_logger.exception(f'Not right connection')
+            #logg.server_logger.exception(f'Not right connection: {host} != {self.server_name}, {self.ip}:{self.port}')
             #raise Exception(f'Not right connection')
+        if host not in (self.server_name, f'{self.ip}', machine_ip):
+            logg.server_logger.exception(f'Not right connection: {host} != {self.server_name}, {self.ip}, {machine_ip}')
+            raise Exception(f'Not right connection')
+        logg.server_logger.info(f'Request: {method}, {uri}, {version}, {headers}, {headers.get("X-Forwarded-For")}')
         return Request(method, uri, version, headers, rfile, headers.get('X-Forwarded-For'))
 
     def handle_request(self, request):
@@ -156,7 +162,7 @@ class Server:
 
 
 def main():
-    server = Server('192.168.220.4', 112, 'proxy')
+    server = Server('192.168.220.4', 10101, 'proxy')
     server.server_enable()
 
 if __name__ == "__main__":
