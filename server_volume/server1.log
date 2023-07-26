@@ -1,16 +1,27 @@
-2023-07-24 21:18:40,802 ERROR MQQT connection failed
-Traceback (most recent call last):
-  File "/app/mqtt_module.py", line 41, in connect
-    self.client.connect(self.broker_ip, self.port, 60)
-  File "/usr/local/lib/python3.9/site-packages/paho/mqtt/client.py", line 914, in connect
-    return self.reconnect()
-  File "/usr/local/lib/python3.9/site-packages/paho/mqtt/client.py", line 1044, in reconnect
-    sock = self._create_socket_connection()
-  File "/usr/local/lib/python3.9/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
-    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
-  File "/usr/local/lib/python3.9/socket.py", line 844, in create_connection
-    raise err
-  File "/usr/local/lib/python3.9/socket.py", line 832, in create_connection
-    sock.connect(sa)
-OSError: [Errno 113] No route to host
-2023-07-24 21:18:40,804 INFO MQQT successful subscribe: [('gamedata', 1), ('instruction', 1)]
+2023-07-26 15:20:27,120 INFO MQQT successful connection: 192.168.220.2:1883
+2023-07-26 15:20:27,120 INFO MQQT successful subscribe: gamedata
+2023-07-26 15:20:27,121 INFO Connect with broker
+2023-07-26 15:20:41,038 INFO Successful connection: ('192.168.220.3', 49866)
+2023-07-26 15:20:41,039 INFO Request: GET, /device, HTTP/1.0, 10.0.41.165
+2023-07-26 15:20:41,039 INFO Successful request parsing
+2023-07-26 15:20:41,039 INFO HTTP message: Topic: instruction, Info: eheth
+2023-07-26 15:20:41,040 INFO Send eheth to topic instruction
+2023-07-26 15:20:41,050 INFO Data published
+2023-07-26 15:21:06,747 INFO MQQT answer success
+
+2023-07-26 15:21:10,358 INFO Successful connection: ('192.168.220.3', 46836)
+2023-07-26 15:21:10,359 INFO Request: GET, /device, HTTP/1.0, 10.0.41.165
+2023-07-26 15:21:10,359 INFO Successful request parsing
+2023-07-26 15:21:10,359 INFO HTTP message: Topic: instruction, Info: eheth
+2023-07-26 15:21:10,360 INFO Send eheth to topic instruction
+2023-07-26 15:21:10,370 INFO Data published
+2023-07-26 15:21:13,526 INFO MQQT answer success
+
+2023-07-26 15:21:27,628 INFO Successful connection: ('192.168.220.3', 35588)
+2023-07-26 15:21:27,628 INFO Request: GET, /device, HTTP/1.0, 10.0.41.165
+2023-07-26 15:21:27,628 INFO Successful request parsing
+2023-07-26 15:21:27,629 INFO HTTP message: Topic: instruction, Info: eheth
+2023-07-26 15:21:27,629 INFO Send eheth to topic instruction
+2023-07-26 15:21:27,634 INFO Data published
+2023-07-26 15:21:30,761 INFO MQQT answer success
+

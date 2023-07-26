@@ -41,7 +41,7 @@ class mqtt_unit:
             self.client.connect(self.broker_ip, self.port, 60)
             logg.server_logger.info(f'MQQT successful connection: {self.broker_ip}:{self.port}')
         except:
-            logg.server_logger.exception(f'MQQT connection failed')
+            logg.server_logger.exception(f'MQQT connection failed\r\n')
             #print("Connection failed")
 
     #Subscribe to topics
@@ -50,7 +50,7 @@ class mqtt_unit:
             self.client.subscribe(self.topic)
             logg.server_logger.info(f'MQQT successful subscribe: {self.topic}')
         except:
-            logg.server_logger.exception(f'MQQT subscribe failed')
+            logg.server_logger.exception(f'MQQT subscribe failed\r\n')
             #print("Subscribe failed")
 
     #Send message      
@@ -64,5 +64,5 @@ class mqtt_unit:
                 logg.server_logger.info(f"Failed to send message to topic {topic}")
                 #print(f"Failed to send message to topic {topic}")
         except: 
-            logg.server_logger.exception(f'MQQT publish failed')
+            logg.server_logger.exception(f'MQQT publish failed\r\n')
             #print("Publish failed")
