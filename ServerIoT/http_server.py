@@ -15,10 +15,10 @@ port1 = 1883
 
 #Client-Server info
 topics = [
-    ('gamedata', 1),
-    ('instruction', 1)
+    ('/GameData', 2),
+    ('/EE', 2)
 ]
-topics = 'gamedata'
+#topics = '/GameData'
 
 #Сlient info
 client_id = 'main_client'
@@ -29,7 +29,9 @@ password = '123'
 machine_ip = '10.0.41.64'
 
 #MQTT timeout
-mqtt_timeout = 30
+mqtt_timeout = 20
+
+flag = 1
 
 
 class Request:
@@ -126,21 +128,29 @@ class Server:
         return Request(method, uri, version, headers, rfile, headers.get('X-Real-IP'))
 
     def handle_request(self, socket, request):
+        self.client.publish_message('/Instructions', 'p'.encode('utf-8'))
         begin_sec = time.time()
-        mqtt_module.global_message = ""
+        #mqtt_module.global_message = ""
         message_info = Request_message(request.headers.get('Topic'), request.headers.get('Info'))
-        logg.server_logger.info(f'HTTP message: Topic: {message_info.topic}, Info: {message_info.info}')
+        logg.server_logger.info(f'HTTP message: Topic: {message_info.topic}, Info: {message_info.info.encode("utf-8")}')
         #print(message_info.topic, message_info.info)
         try:
-            self.client.publish_message(message_info.topic, message_info.info)
+            mqtt_module.global_message = ""
+            self.client.publish_message(message_info.topic, message_info.info.encode('utf-8'))
+            #logg.server_logger.info(f'{mqtt_module.global_message}')
             while True:
                 final_sec = time.time()
+                #logg.server_logger.info(f'{final_sec - begin_sec}')
                 if mqtt_module.global_message != "":
                     logg.server_logger.info(f'MQQT answer {mqtt_module.global_message}\r\n')
                     #print(mqtt_module.global_message)
                     break
-                if final_sec - begin_sec == mqtt_timeout:
-                    mqtt_module.global_message = 'unsuccess'
+                if final_sec - begin_sec > mqtt_timeout:
+                    #time.sleep(5)
+                    #self.client.publish_message('/E', 'p'.encode('utf-8'))
+                    #mqtt_module.global_message = ""
+                    #begin_sec = final_sec
+                    mqtt_module.global_message = 'Lose'
                     break
             data = f'GET /device HTTP/1.1\r\n' \
             f'Host: {request.ip}\r\n' \

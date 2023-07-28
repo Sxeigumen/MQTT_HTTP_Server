@@ -1,27 +1,799 @@
-2023-07-26 15:20:27,120 INFO MQQT successful connection: 192.168.220.2:1883
-2023-07-26 15:20:27,120 INFO MQQT successful subscribe: gamedata
-2023-07-26 15:20:27,121 INFO Connect with broker
-2023-07-26 15:20:41,038 INFO Successful connection: ('192.168.220.3', 49866)
-2023-07-26 15:20:41,039 INFO Request: GET, /device, HTTP/1.0, 10.0.41.165
-2023-07-26 15:20:41,039 INFO Successful request parsing
-2023-07-26 15:20:41,039 INFO HTTP message: Topic: instruction, Info: eheth
-2023-07-26 15:20:41,040 INFO Send eheth to topic instruction
-2023-07-26 15:20:41,050 INFO Data published
-2023-07-26 15:21:06,747 INFO MQQT answer success
+2023-07-28 07:58:07,180 INFO MQQT successful connection: 192.168.220.2:1883
+2023-07-28 07:58:07,180 INFO MQQT successful subscribe: [('/GameData', 2), ('/EE', 2)]
+2023-07-28 07:58:07,180 INFO Connect with broker
+2023-07-28 08:00:33,707 INFO Successful connection: ('192.168.220.3', 56316)
+2023-07-28 08:00:33,708 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:00:33,708 INFO Successful request parsing
+2023-07-28 08:00:33,709 INFO Send b'p' to topic /Instructions
+2023-07-28 08:00:33,709 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:00:33,709 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:00:33,720 INFO Data published
+2023-07-28 08:00:33,725 INFO Data published
+2023-07-28 08:00:34,569 INFO MQQT answer Win
 
-2023-07-26 15:21:10,358 INFO Successful connection: ('192.168.220.3', 46836)
-2023-07-26 15:21:10,359 INFO Request: GET, /device, HTTP/1.0, 10.0.41.165
-2023-07-26 15:21:10,359 INFO Successful request parsing
-2023-07-26 15:21:10,359 INFO HTTP message: Topic: instruction, Info: eheth
-2023-07-26 15:21:10,360 INFO Send eheth to topic instruction
-2023-07-26 15:21:10,370 INFO Data published
-2023-07-26 15:21:13,526 INFO MQQT answer success
+2023-07-28 08:00:44,048 INFO Successful connection: ('192.168.220.3', 43476)
+2023-07-28 08:00:44,049 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:00:44,049 INFO Successful request parsing
+2023-07-28 08:00:44,050 INFO Send b'p' to topic /Instructions
+2023-07-28 08:00:44,050 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:00:44,050 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:00:44,061 INFO Data published
+2023-07-28 08:00:44,066 INFO Data published
+2023-07-28 08:00:45,019 INFO MQQT answer Win
 
-2023-07-26 15:21:27,628 INFO Successful connection: ('192.168.220.3', 35588)
-2023-07-26 15:21:27,628 INFO Request: GET, /device, HTTP/1.0, 10.0.41.165
-2023-07-26 15:21:27,628 INFO Successful request parsing
-2023-07-26 15:21:27,629 INFO HTTP message: Topic: instruction, Info: eheth
-2023-07-26 15:21:27,629 INFO Send eheth to topic instruction
-2023-07-26 15:21:27,634 INFO Data published
-2023-07-26 15:21:30,761 INFO MQQT answer success
+2023-07-28 08:00:57,103 INFO Successful connection: ('192.168.220.3', 40706)
+2023-07-28 08:00:57,104 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:00:57,104 INFO Successful request parsing
+2023-07-28 08:00:57,104 INFO Send b'p' to topic /Instructions
+2023-07-28 08:00:57,104 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 08:00:57,105 INFO Data published
+2023-07-28 08:00:57,105 INFO Send b'\x08' to topic /Instructions
+2023-07-28 08:00:57,105 INFO Data published
+2023-07-28 08:00:59,638 INFO MQQT answer Win
+
+2023-07-28 08:01:07,548 INFO Successful connection: ('192.168.220.3', 53146)
+2023-07-28 08:01:07,548 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:01:07,549 INFO Successful request parsing
+2023-07-28 08:01:07,549 INFO Send b'p' to topic /Instructions
+2023-07-28 08:01:07,549 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 08:01:07,549 INFO Send b'\x08' to topic /Instructions
+2023-07-28 08:01:07,555 INFO Data published
+2023-07-28 08:01:07,560 INFO Data published
+2023-07-28 08:01:13,950 INFO MQQT answer Win
+
+2023-07-28 08:01:26,245 INFO Successful connection: ('192.168.220.3', 50564)
+2023-07-28 08:01:26,246 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:01:26,246 INFO Successful request parsing
+2023-07-28 08:01:26,246 INFO Send b'p' to topic /Instructions
+2023-07-28 08:01:26,246 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:01:26,247 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:01:26,252 INFO Data published
+2023-07-28 08:01:26,257 INFO Data published
+2023-07-28 08:01:29,831 INFO MQQT answer Win
+
+2023-07-28 08:01:43,688 INFO Successful connection: ('192.168.220.3', 42958)
+2023-07-28 08:01:43,688 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:01:43,688 INFO Successful request parsing
+2023-07-28 08:01:43,689 INFO Send b'p' to topic /Instructions
+2023-07-28 08:01:43,689 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:01:43,689 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:01:43,700 INFO Data published
+2023-07-28 08:01:43,710 INFO Data published
+2023-07-28 08:01:44,861 INFO MQQT answer Win
+
+2023-07-28 08:01:49,954 INFO Successful connection: ('192.168.220.3', 53856)
+2023-07-28 08:01:49,955 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:01:49,955 INFO Successful request parsing
+2023-07-28 08:01:49,955 INFO Send b'p' to topic /Instructions
+2023-07-28 08:01:49,956 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:01:49,956 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:01:49,961 INFO Data published
+2023-07-28 08:01:49,966 INFO Data published
+2023-07-28 08:01:51,358 INFO MQQT answer Win
+
+2023-07-28 08:01:59,250 INFO Successful connection: ('192.168.220.3', 37208)
+2023-07-28 08:01:59,251 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:01:59,251 INFO Successful request parsing
+2023-07-28 08:01:59,252 INFO Send b'p' to topic /Instructions
+2023-07-28 08:01:59,252 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 08:01:59,252 INFO Send b'\x08' to topic /Instructions
+2023-07-28 08:01:59,257 INFO Data published
+2023-07-28 08:01:59,263 INFO Data published
+2023-07-28 08:02:04,026 INFO MQQT answer Win
+
+2023-07-28 08:02:27,974 INFO Successful connection: ('192.168.220.3', 59486)
+2023-07-28 08:02:27,975 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:02:27,975 INFO Successful request parsing
+2023-07-28 08:02:27,975 INFO Send b'p' to topic /Instructions
+2023-07-28 08:02:27,976 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:02:27,976 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:02:27,991 INFO Data published
+2023-07-28 08:02:27,997 INFO Data published
+2023-07-28 08:02:35,752 INFO MQQT answer Win
+
+2023-07-28 08:02:56,801 INFO Successful connection: ('192.168.220.3', 53666)
+2023-07-28 08:02:56,801 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:02:56,802 INFO Successful request parsing
+2023-07-28 08:02:56,802 INFO Send b'p' to topic /Instructions
+2023-07-28 08:02:56,802 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:02:56,802 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:02:56,813 INFO Data published
+2023-07-28 08:02:56,823 INFO Data published
+2023-07-28 08:02:57,427 INFO MQQT answer Win
+
+2023-07-28 08:03:07,351 INFO Successful connection: ('192.168.220.3', 39890)
+2023-07-28 08:03:07,351 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:03:07,351 INFO Successful request parsing
+2023-07-28 08:03:07,352 INFO Send b'p' to topic /Instructions
+2023-07-28 08:03:07,352 INFO HTTP message: Topic: /Instructions, Info: b'\x10'
+2023-07-28 08:03:07,352 INFO Data published
+2023-07-28 08:03:07,353 INFO Send b'\x10' to topic /Instructions
+2023-07-28 08:03:07,353 INFO Data published
+2023-07-28 08:03:19,143 INFO MQQT answer Lose
+
+2023-07-28 08:03:23,331 INFO Successful connection: ('192.168.220.3', 55466)
+2023-07-28 08:03:23,332 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:03:23,332 INFO Successful request parsing
+2023-07-28 08:03:23,332 INFO Send b'p' to topic /Instructions
+2023-07-28 08:03:23,333 INFO HTTP message: Topic: /Instructions, Info: b'\x10'
+2023-07-28 08:03:23,333 INFO Data published
+2023-07-28 08:03:23,333 INFO Send b'\x10' to topic /Instructions
+2023-07-28 08:03:23,333 INFO Data published
+2023-07-28 08:03:29,917 INFO MQQT answer Win
+
+2023-07-28 08:03:49,652 INFO Successful connection: ('192.168.220.3', 32896)
+2023-07-28 08:03:49,653 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:03:49,653 INFO Successful request parsing
+2023-07-28 08:03:49,653 INFO Send b'p' to topic /Instructions
+2023-07-28 08:03:49,653 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:03:49,654 INFO Data published
+2023-07-28 08:03:49,654 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:03:49,654 INFO Data published
+2023-07-28 08:03:50,388 INFO MQQT answer Win
+
+2023-07-28 08:03:57,486 INFO Successful connection: ('192.168.220.3', 51318)
+2023-07-28 08:03:57,487 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:03:57,487 INFO Successful request parsing
+2023-07-28 08:03:57,487 INFO Send b'p' to topic /Instructions
+2023-07-28 08:03:57,488 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:03:57,488 INFO Data published
+2023-07-28 08:03:57,488 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:03:57,488 INFO Data published
+2023-07-28 08:03:58,533 INFO MQQT answer Win
+
+2023-07-28 08:04:06,155 INFO Successful connection: ('192.168.220.3', 51330)
+2023-07-28 08:04:06,155 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:04:06,156 INFO Successful request parsing
+2023-07-28 08:04:06,156 INFO Send b'p' to topic /Instructions
+2023-07-28 08:04:06,156 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:04:06,156 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:04:06,157 INFO Data published
+2023-07-28 08:04:06,172 INFO Data published
+2023-07-28 08:04:08,244 INFO MQQT answer Win
+
+2023-07-28 08:04:14,511 INFO Successful connection: ('192.168.220.3', 37892)
+2023-07-28 08:04:14,512 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:04:14,512 INFO Successful request parsing
+2023-07-28 08:04:14,512 INFO Send b'p' to topic /Instructions
+2023-07-28 08:04:14,513 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:04:14,513 INFO Data published
+2023-07-28 08:04:14,513 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:04:14,513 INFO Data published
+2023-07-28 08:04:37,387 INFO Successful connection: ('192.168.220.3', 36640)
+2023-07-28 08:04:37,388 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:04:37,388 INFO Successful request parsing
+2023-07-28 08:04:37,388 INFO Send b'p' to topic /Instructions
+2023-07-28 08:04:37,389 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:04:37,389 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:04:37,389 INFO Data published
+2023-07-28 08:04:37,399 INFO Data published
+2023-07-28 08:05:03,398 INFO Successful connection: ('192.168.220.3', 53732)
+2023-07-28 08:05:03,399 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:05:03,399 INFO Successful request parsing
+2023-07-28 08:05:03,400 INFO Send b'p' to topic /Instructions
+2023-07-28 08:05:03,400 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:05:03,400 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:05:03,405 INFO Data published
+2023-07-28 08:05:03,411 INFO Data published
+2023-07-28 08:05:46,642 INFO Successful connection: ('192.168.220.3', 36972)
+2023-07-28 08:05:46,643 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:05:46,643 INFO Successful request parsing
+2023-07-28 08:05:46,643 INFO Send b'p' to topic /Instructions
+2023-07-28 08:05:46,644 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:05:46,644 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:05:46,654 INFO Data published
+2023-07-28 08:05:46,654 INFO Data published
+2023-07-28 08:06:08,892 INFO Successful connection: ('192.168.220.3', 34446)
+2023-07-28 08:06:08,892 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:06:08,893 INFO Successful request parsing
+2023-07-28 08:06:08,893 INFO Send b'p' to topic /Instructions
+2023-07-28 08:06:08,893 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:06:08,893 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:06:08,904 INFO Data published
+2023-07-28 08:06:08,909 INFO Data published
+2023-07-28 08:06:13,542 INFO MQQT answer Win
+
+2023-07-28 08:06:25,186 INFO Successful connection: ('192.168.220.3', 50470)
+2023-07-28 08:06:25,187 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:06:25,187 INFO Successful request parsing
+2023-07-28 08:06:25,188 INFO Send b'p' to topic /Instructions
+2023-07-28 08:06:25,188 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:06:25,188 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:06:25,198 INFO Data published
+2023-07-28 08:06:25,209 INFO Data published
+2023-07-28 08:06:25,748 INFO MQQT answer Win
+
+2023-07-28 08:23:13,977 INFO Successful connection: ('192.168.220.3', 37920)
+2023-07-28 08:23:13,978 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:23:13,978 INFO Successful request parsing
+2023-07-28 08:23:13,978 INFO Send b'p' to topic /Instructions
+2023-07-28 08:23:13,979 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:23:13,979 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:23:13,984 INFO Data published
+2023-07-28 08:23:13,989 INFO Data published
+2023-07-28 08:23:15,307 INFO MQQT answer Win
+
+2023-07-28 08:23:26,719 INFO Successful connection: ('192.168.220.3', 43082)
+2023-07-28 08:23:26,720 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:23:26,720 INFO Successful request parsing
+2023-07-28 08:23:26,721 INFO Send b'p' to topic /Instructions
+2023-07-28 08:23:26,721 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:23:26,721 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:23:26,726 INFO Data published
+2023-07-28 08:23:26,732 INFO Data published
+2023-07-28 08:23:37,643 INFO MQQT answer Lose
+
+2023-07-28 08:23:42,700 INFO Successful connection: ('192.168.220.3', 53926)
+2023-07-28 08:23:42,700 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:23:42,702 INFO Successful request parsing
+2023-07-28 08:23:42,703 INFO Send b'p' to topic /Instructions
+2023-07-28 08:23:42,703 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:23:42,703 INFO Data published
+2023-07-28 08:23:42,704 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:23:42,709 INFO Data published
+2023-07-28 08:23:45,887 INFO MQQT answer Win
+
+2023-07-28 08:24:10,379 INFO Successful connection: ('192.168.220.3', 60196)
+2023-07-28 08:24:10,379 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:24:10,379 INFO Successful request parsing
+2023-07-28 08:24:10,379 INFO Send b'p' to topic /Instructions
+2023-07-28 08:24:10,380 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:24:10,380 INFO Data published
+2023-07-28 08:24:10,380 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:24:10,380 INFO Data published
+2023-07-28 08:24:13,352 INFO MQQT answer Win
+
+2023-07-28 08:24:25,838 INFO Successful connection: ('192.168.220.3', 48344)
+2023-07-28 08:24:25,838 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:24:25,838 INFO Successful request parsing
+2023-07-28 08:24:25,839 INFO Send b'p' to topic /Instructions
+2023-07-28 08:24:25,839 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 08:24:25,839 INFO Send b'\x08' to topic /Instructions
+2023-07-28 08:24:25,840 INFO Data published
+2023-07-28 08:24:25,850 INFO Data published
+2023-07-28 08:24:29,736 INFO MQQT answer Win
+
+2023-07-28 08:28:02,740 INFO Successful connection: ('192.168.220.3', 54468)
+2023-07-28 08:28:02,741 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:28:02,741 INFO Successful request parsing
+2023-07-28 08:28:02,741 INFO Send b'p' to topic /Instructions
+2023-07-28 08:28:02,741 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:28:02,744 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:28:02,744 INFO Data published
+2023-07-28 08:28:02,749 INFO Data published
+2023-07-28 08:28:06,029 INFO MQQT answer Win
+
+2023-07-28 08:28:11,514 INFO Successful connection: ('192.168.220.3', 35968)
+2023-07-28 08:28:11,514 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:28:11,515 INFO Successful request parsing
+2023-07-28 08:28:11,515 INFO Send b'p' to topic /Instructions
+2023-07-28 08:28:11,515 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:28:11,515 INFO Data published
+2023-07-28 08:28:11,516 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:28:11,521 INFO Data published
+2023-07-28 08:28:22,099 INFO MQQT answer Lose
+
+2023-07-28 08:28:25,510 INFO Successful connection: ('192.168.220.3', 53856)
+2023-07-28 08:28:25,511 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:28:25,511 INFO Successful request parsing
+2023-07-28 08:28:25,512 INFO Send b'p' to topic /Instructions
+2023-07-28 08:28:25,512 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:28:25,512 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:28:25,517 INFO Data published
+2023-07-28 08:28:25,523 INFO Data published
+2023-07-28 08:28:29,066 INFO MQQT answer Win
+
+2023-07-28 08:40:12,115 INFO Successful connection: ('192.168.220.3', 40772)
+2023-07-28 08:40:12,116 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:40:12,116 INFO Successful request parsing
+2023-07-28 08:40:12,117 INFO Send b'p' to topic /Instructions
+2023-07-28 08:40:12,117 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:40:12,117 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:40:12,122 INFO Data published
+2023-07-28 08:40:12,122 INFO Data published
+2023-07-28 08:40:14,629 INFO MQQT answer Win
+
+2023-07-28 08:40:20,680 INFO Successful connection: ('192.168.220.3', 49910)
+2023-07-28 08:40:20,681 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:40:20,681 INFO Successful request parsing
+2023-07-28 08:40:20,681 INFO Send b'p' to topic /Instructions
+2023-07-28 08:40:20,682 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:40:20,682 INFO Data published
+2023-07-28 08:40:20,682 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:40:20,683 INFO Data published
+2023-07-28 08:40:23,548 INFO MQQT answer Win
+
+2023-07-28 08:56:26,804 INFO Successful connection: ('192.168.220.3', 39896)
+2023-07-28 08:56:26,805 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:56:26,805 INFO Successful request parsing
+2023-07-28 08:56:26,805 INFO Send b'p' to topic /Instructions
+2023-07-28 08:56:26,806 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:56:26,806 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:56:26,806 INFO Data published
+2023-07-28 08:56:26,817 INFO Data published
+2023-07-28 08:56:28,482 INFO MQQT answer Win
+
+2023-07-28 08:56:47,903 INFO Successful connection: ('192.168.220.3', 60218)
+2023-07-28 08:56:47,904 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:56:47,904 INFO Successful request parsing
+2023-07-28 08:56:47,904 INFO Send b'p' to topic /Instructions
+2023-07-28 08:56:47,905 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 08:56:47,905 INFO Send b'\x08' to topic /Instructions
+2023-07-28 08:56:47,910 INFO Data published
+2023-07-28 08:56:47,915 INFO Data published
+2023-07-28 08:56:49,495 INFO MQQT answer Win
+
+2023-07-28 08:57:01,586 INFO Successful connection: ('192.168.220.3', 44058)
+2023-07-28 08:57:01,587 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:57:01,587 INFO Successful request parsing
+2023-07-28 08:57:01,588 INFO Send b'p' to topic /Instructions
+2023-07-28 08:57:01,588 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:57:01,588 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:57:01,599 INFO Data published
+2023-07-28 08:57:01,609 INFO Data published
+2023-07-28 08:57:02,496 INFO MQQT answer Win
+
+2023-07-28 08:57:21,747 INFO Successful connection: ('192.168.220.3', 56016)
+2023-07-28 08:57:21,748 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:57:21,748 INFO Successful request parsing
+2023-07-28 08:57:21,748 INFO Send b'p' to topic /Instructions
+2023-07-28 08:57:21,749 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:57:21,749 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:57:21,754 INFO Data published
+2023-07-28 08:57:21,759 INFO Data published
+2023-07-28 08:57:22,708 INFO MQQT answer Win
+
+2023-07-28 08:57:32,505 INFO Successful connection: ('192.168.220.3', 50818)
+2023-07-28 08:57:32,506 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:57:32,506 INFO Successful request parsing
+2023-07-28 08:57:32,506 INFO Send b'p' to topic /Instructions
+2023-07-28 08:57:32,506 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:57:32,507 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:57:32,512 INFO Data published
+2023-07-28 08:57:32,517 INFO Data published
+2023-07-28 08:57:33,315 INFO MQQT answer Win
+
+2023-07-28 08:57:44,410 INFO Successful connection: ('192.168.220.3', 47770)
+2023-07-28 08:57:44,411 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:57:44,411 INFO Successful request parsing
+2023-07-28 08:57:44,412 INFO Send b'p' to topic /Instructions
+2023-07-28 08:57:44,412 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:57:44,412 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:57:44,418 INFO Data published
+2023-07-28 08:57:44,428 INFO Data published
+2023-07-28 08:57:46,863 INFO MQQT answer Win
+
+2023-07-28 08:57:54,125 INFO Successful connection: ('192.168.220.3', 46956)
+2023-07-28 08:57:54,126 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:57:54,126 INFO Successful request parsing
+2023-07-28 08:57:54,126 INFO Send b'p' to topic /Instructions
+2023-07-28 08:57:54,127 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:57:54,127 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:57:54,127 INFO Data published
+2023-07-28 08:57:54,138 INFO Data published
+2023-07-28 08:57:55,128 INFO MQQT answer Win
+
+2023-07-28 08:58:03,840 INFO Successful connection: ('192.168.220.3', 32990)
+2023-07-28 08:58:03,841 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:58:03,841 INFO Successful request parsing
+2023-07-28 08:58:03,841 INFO Send b'p' to topic /Instructions
+2023-07-28 08:58:03,841 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 08:58:03,842 INFO Send b'\x06' to topic /Instructions
+2023-07-28 08:58:03,847 INFO Data published
+2023-07-28 08:58:03,852 INFO Data published
+2023-07-28 08:58:04,518 INFO MQQT answer Win
+
+2023-07-28 08:58:28,175 INFO Successful connection: ('192.168.220.3', 54898)
+2023-07-28 08:58:28,175 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:58:28,176 INFO Successful request parsing
+2023-07-28 08:58:28,176 INFO Send b'p' to topic /Instructions
+2023-07-28 08:58:28,176 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 08:58:28,176 INFO Send b'\x04' to topic /Instructions
+2023-07-28 08:58:28,182 INFO Data published
+2023-07-28 08:58:28,182 INFO Data published
+2023-07-28 08:58:29,299 INFO MQQT answer Win
+
+2023-07-28 08:58:54,915 INFO Successful connection: ('192.168.220.3', 44356)
+2023-07-28 08:58:54,915 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 08:58:54,915 INFO Successful request parsing
+2023-07-28 08:58:54,916 INFO Send b'p' to topic /Instructions
+2023-07-28 08:58:54,916 INFO Data published
+2023-07-28 08:58:54,916 INFO HTTP message: Topic: /Instructions, Info: b'\x10'
+2023-07-28 08:58:54,917 INFO Send b'\x10' to topic /Instructions
+2023-07-28 08:58:54,928 INFO Data published
+2023-07-28 08:58:56,122 INFO MQQT answer Win
+
+2023-07-28 09:00:06,643 INFO Successful connection: ('192.168.220.3', 37420)
+2023-07-28 09:00:06,643 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:00:06,644 INFO Successful request parsing
+2023-07-28 09:00:06,644 INFO Send b'p' to topic /Instructions
+2023-07-28 09:00:06,644 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:00:06,644 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:00:06,650 INFO Data published
+2023-07-28 09:00:06,650 INFO Data published
+2023-07-28 09:00:07,874 INFO MQQT answer Win
+
+2023-07-28 09:00:29,726 INFO Successful connection: ('192.168.220.3', 53510)
+2023-07-28 09:00:29,727 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:00:29,727 INFO Successful request parsing
+2023-07-28 09:00:29,728 INFO Send b'p' to topic /Instructions
+2023-07-28 09:00:29,728 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:00:29,728 INFO Data published
+2023-07-28 09:00:29,728 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:00:29,729 INFO Data published
+2023-07-28 09:00:30,815 INFO MQQT answer Win
+
+2023-07-28 09:01:17,044 INFO Successful connection: ('192.168.220.3', 45272)
+2023-07-28 09:01:17,044 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:01:17,045 INFO Successful request parsing
+2023-07-28 09:01:17,045 INFO Send b'p' to topic /Instructions
+2023-07-28 09:01:17,045 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:01:17,045 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:01:17,056 INFO Data published
+2023-07-28 09:01:17,061 INFO Data published
+2023-07-28 09:01:18,433 INFO MQQT answer Win
+
+2023-07-28 09:03:37,634 INFO Successful connection: ('192.168.220.3', 37518)
+2023-07-28 09:03:37,635 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:03:37,635 INFO Successful request parsing
+2023-07-28 09:03:37,635 INFO Send b'p' to topic /Instructions
+2023-07-28 09:03:37,635 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:03:37,635 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:03:37,646 INFO Data published
+2023-07-28 09:03:37,646 INFO Data published
+2023-07-28 09:03:48,038 INFO MQQT answer Lose
+
+2023-07-28 09:04:34,350 INFO Successful connection: ('192.168.220.3', 50742)
+2023-07-28 09:04:34,351 ERROR Erorr: Incorrect request line
+Traceback (most recent call last):
+  File "/app/http_server.py", line 94, in server_client
+    request = self.parse_request(socket)
+  File "/app/http_server.py", line 112, in parse_request
+    method, uri, version = self.parse_request_line(rfile)
+  File "/app/http_server.py", line 188, in parse_request_line
+    raise Exception('Incorrect request line')
+Exception: Incorrect request line
+2023-07-28 09:04:34,352 ERROR Client serving failed ('192.168.220.3', 50742)
+Traceback (most recent call last):
+  File "/app/http_server.py", line 94, in server_client
+    request = self.parse_request(socket)
+  File "/app/http_server.py", line 112, in parse_request
+    method, uri, version = self.parse_request_line(rfile)
+  File "/app/http_server.py", line 188, in parse_request_line
+    raise Exception('Incorrect request line')
+Exception: Incorrect request line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/http_server.py", line 81, in server_enable
+    self.server_client(new_socket)
+  File "/app/http_server.py", line 106, in server_client
+    self.send_error(socket, e)
+AttributeError: 'Server' object has no attribute 'send_error'
+2023-07-28 09:04:40,618 INFO Successful connection: ('192.168.220.3', 47866)
+2023-07-28 09:04:40,619 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:04:40,619 INFO Successful request parsing
+2023-07-28 09:04:40,619 INFO Send b'p' to topic /Instructions
+2023-07-28 09:04:40,620 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:04:40,620 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:04:40,630 INFO Data published
+2023-07-28 09:04:40,636 INFO Data published
+2023-07-28 09:04:51,211 INFO MQQT answer Lose
+
+2023-07-28 09:04:57,956 INFO Successful connection: ('192.168.220.3', 38254)
+2023-07-28 09:04:57,956 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:04:57,957 INFO Successful request parsing
+2023-07-28 09:04:57,957 INFO Send b'p' to topic /Instructions
+2023-07-28 09:04:57,957 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:04:57,957 INFO Data published
+2023-07-28 09:04:57,958 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:04:57,958 INFO Data published
+2023-07-28 09:05:08,392 INFO MQQT answer Lose
+
+2023-07-28 09:05:16,966 INFO Successful connection: ('192.168.220.3', 36102)
+2023-07-28 09:05:16,967 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:05:16,967 INFO Successful request parsing
+2023-07-28 09:05:16,967 INFO Send b'p' to topic /Instructions
+2023-07-28 09:05:16,968 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:05:16,968 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:05:16,968 INFO Data published
+2023-07-28 09:05:16,979 INFO Data published
+2023-07-28 09:05:27,579 INFO MQQT answer Lose
+
+2023-07-28 09:05:27,579 INFO Successful connection: ('192.168.220.3', 36108)
+2023-07-28 09:05:27,580 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:05:27,580 INFO Successful request parsing
+2023-07-28 09:05:27,580 INFO Send b'p' to topic /Instructions
+2023-07-28 09:05:27,580 INFO Data published
+2023-07-28 09:05:27,580 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:05:27,580 INFO Data published
+2023-07-28 09:05:27,580 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:05:37,829 INFO MQQT answer Lose
+
+2023-07-28 09:05:47,152 INFO Successful connection: ('192.168.220.3', 52898)
+2023-07-28 09:05:47,153 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:05:47,153 INFO Successful request parsing
+2023-07-28 09:05:47,153 INFO Send b'p' to topic /Instructions
+2023-07-28 09:05:47,154 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:05:47,154 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:05:47,164 INFO Data published
+2023-07-28 09:05:47,169 INFO Data published
+2023-07-28 09:06:13,055 INFO Successful connection: ('192.168.220.3', 39288)
+2023-07-28 09:06:13,056 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:06:13,056 INFO Successful request parsing
+2023-07-28 09:06:13,057 INFO Send b'p' to topic /Instructions
+2023-07-28 09:06:13,057 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:06:13,057 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:06:13,068 INFO Data published
+2023-07-28 09:06:13,073 INFO Data published
+2023-07-28 09:06:16,853 INFO MQQT answer Win
+
+2023-07-28 09:06:22,770 INFO Successful connection: ('192.168.220.3', 53800)
+2023-07-28 09:06:22,770 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:06:22,770 INFO Successful request parsing
+2023-07-28 09:06:22,771 INFO Send b'p' to topic /Instructions
+2023-07-28 09:06:22,771 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:06:22,771 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:06:22,776 INFO Data published
+2023-07-28 09:06:22,777 INFO Data published
+2023-07-28 09:06:33,187 INFO MQQT answer Lose
+
+2023-07-28 09:06:40,421 INFO Successful connection: ('192.168.220.3', 54194)
+2023-07-28 09:06:40,421 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:06:40,422 INFO Successful request parsing
+2023-07-28 09:06:40,422 INFO Send b'p' to topic /Instructions
+2023-07-28 09:06:40,422 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:06:40,422 INFO Data published
+2023-07-28 09:06:40,423 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:06:40,423 INFO Data published
+2023-07-28 09:06:42,802 INFO MQQT answer Win
+
+2023-07-28 09:07:09,146 INFO Successful connection: ('192.168.220.3', 55354)
+2023-07-28 09:07:09,146 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:07:09,147 INFO Successful request parsing
+2023-07-28 09:07:09,147 INFO Send b'p' to topic /Instructions
+2023-07-28 09:07:09,147 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:07:09,147 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:07:09,158 INFO Data published
+2023-07-28 09:07:09,163 INFO Data published
+2023-07-28 09:07:10,842 INFO MQQT answer Win
+
+2023-07-28 09:07:20,112 INFO Successful connection: ('192.168.220.3', 54552)
+2023-07-28 09:07:20,113 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:07:20,113 INFO Successful request parsing
+2023-07-28 09:07:20,113 INFO Send b'p' to topic /Instructions
+2023-07-28 09:07:20,114 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:07:20,114 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:07:20,124 INFO Data published
+2023-07-28 09:07:20,130 INFO Data published
+2023-07-28 09:07:24,129 INFO MQQT answer Win
+
+2023-07-28 09:10:34,285 INFO Successful connection: ('192.168.220.3', 50008)
+2023-07-28 09:10:34,285 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:10:34,286 INFO Successful request parsing
+2023-07-28 09:10:34,286 INFO Send b'p' to topic /Instructions
+2023-07-28 09:10:34,286 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:10:34,286 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:10:34,297 INFO Data published
+2023-07-28 09:10:34,297 INFO Data published
+2023-07-28 09:10:35,601 INFO MQQT answer Win
+
+2023-07-28 09:11:14,811 INFO Successful connection: ('192.168.220.3', 58532)
+2023-07-28 09:11:14,812 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:11:14,812 INFO Successful request parsing
+2023-07-28 09:11:14,813 INFO Send b'p' to topic /Instructions
+2023-07-28 09:11:14,813 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:11:14,813 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:11:14,818 INFO Data published
+2023-07-28 09:11:14,824 INFO Data published
+2023-07-28 09:11:16,837 INFO MQQT answer Win
+
+2023-07-28 09:11:25,361 INFO Successful connection: ('192.168.220.3', 34798)
+2023-07-28 09:11:25,362 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:11:25,362 INFO Successful request parsing
+2023-07-28 09:11:25,362 INFO Send b'p' to topic /Instructions
+2023-07-28 09:11:25,362 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:11:25,363 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:11:25,373 INFO Data published
+2023-07-28 09:11:25,378 INFO Data published
+2023-07-28 09:11:35,828 INFO MQQT answer Lose
+
+2023-07-28 09:12:30,016 INFO Successful connection: ('192.168.220.3', 38750)
+2023-07-28 09:12:30,017 INFO Request: GET, /device, HTTP/1.0, 10.0.41.205
+2023-07-28 09:12:30,017 INFO Successful request parsing
+2023-07-28 09:12:30,017 INFO Send b'p' to topic /Instructions
+2023-07-28 09:12:30,018 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:12:30,018 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:12:30,023 INFO Data published
+2023-07-28 09:12:30,028 INFO Data published
+2023-07-28 09:12:37,802 INFO MQQT answer Win
+
+2023-07-28 09:14:29,194 INFO Successful connection: ('192.168.220.3', 51876)
+2023-07-28 09:14:29,195 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:14:29,195 INFO Successful request parsing
+2023-07-28 09:14:29,195 INFO Send b'p' to topic /Instructions
+2023-07-28 09:14:29,195 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:14:29,195 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:14:29,206 INFO Data published
+2023-07-28 09:14:29,206 INFO Data published
+2023-07-28 09:14:29,692 INFO MQQT answer Win
+
+2023-07-28 09:29:43,833 INFO Successful connection: ('192.168.220.3', 44416)
+2023-07-28 09:29:43,833 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:29:43,834 INFO Successful request parsing
+2023-07-28 09:29:43,834 INFO Send b'p' to topic /Instructions
+2023-07-28 09:29:43,834 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:29:43,834 INFO Data published
+2023-07-28 09:29:43,835 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:29:43,835 INFO Data published
+2023-07-28 09:29:54,651 INFO MQQT answer Lose
+
+2023-07-28 09:29:54,652 INFO Successful connection: ('192.168.220.3', 54200)
+2023-07-28 09:29:54,652 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:29:54,652 INFO Successful request parsing
+2023-07-28 09:29:54,652 INFO Send b'p' to topic /Instructions
+2023-07-28 09:29:54,652 INFO Data published
+2023-07-28 09:29:54,652 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:29:54,652 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:29:54,652 INFO Data published
+2023-07-28 09:30:05,329 INFO MQQT answer Lose
+
+2023-07-28 09:30:10,045 INFO Successful connection: ('192.168.220.3', 43594)
+2023-07-28 09:30:10,045 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:30:10,046 INFO Successful request parsing
+2023-07-28 09:30:10,046 INFO Send b'p' to topic /Instructions
+2023-07-28 09:30:10,046 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:30:10,047 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:30:10,057 INFO Data published
+2023-07-28 09:30:10,067 INFO Data published
+2023-07-28 09:30:12,048 INFO MQQT answer Win
+
+2023-07-28 09:30:14,953 INFO Successful connection: ('192.168.220.3', 35448)
+2023-07-28 09:30:14,953 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:30:14,953 INFO Successful request parsing
+2023-07-28 09:30:14,954 INFO Send b'p' to topic /Instructions
+2023-07-28 09:30:14,954 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:30:14,954 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:30:14,965 INFO Data published
+2023-07-28 09:30:14,970 INFO Data published
+2023-07-28 09:30:17,862 INFO MQQT answer Win
+
+2023-07-28 09:30:33,754 INFO Successful connection: ('192.168.220.3', 58684)
+2023-07-28 09:30:33,755 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:30:33,755 INFO Successful request parsing
+2023-07-28 09:30:33,755 INFO Send b'p' to topic /Instructions
+2023-07-28 09:30:33,756 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:30:33,756 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:30:33,756 INFO Data published
+2023-07-28 09:30:33,762 INFO Data published
+2023-07-28 09:30:34,968 INFO MQQT answer Win
+
+2023-07-28 09:30:44,934 INFO Successful connection: ('192.168.220.3', 52352)
+2023-07-28 09:30:44,935 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:30:44,935 INFO Successful request parsing
+2023-07-28 09:30:44,936 INFO Send b'p' to topic /Instructions
+2023-07-28 09:30:44,936 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 09:30:44,936 INFO Data published
+2023-07-28 09:30:44,937 INFO Send b'\x08' to topic /Instructions
+2023-07-28 09:30:44,942 INFO Data published
+2023-07-28 09:30:46,616 INFO MQQT answer Win
+
+2023-07-28 09:30:51,931 INFO Successful connection: ('192.168.220.3', 52356)
+2023-07-28 09:30:51,931 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:30:51,932 INFO Successful request parsing
+2023-07-28 09:30:51,932 INFO Send b'p' to topic /Instructions
+2023-07-28 09:30:51,932 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 09:30:51,932 INFO Send b'\x08' to topic /Instructions
+2023-07-28 09:30:51,938 INFO Data published
+2023-07-28 09:30:51,943 INFO Data published
+2023-07-28 09:30:53,470 INFO MQQT answer Win
+
+2023-07-28 09:39:34,285 INFO Successful connection: ('192.168.220.3', 49102)
+2023-07-28 09:39:34,286 INFO Request: GET, /device, HTTP/1.0, 10.0.41.250
+2023-07-28 09:39:34,286 INFO Successful request parsing
+2023-07-28 09:39:34,286 INFO Send b'p' to topic /Instructions
+2023-07-28 09:39:34,286 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:39:34,287 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:39:34,292 INFO Data published
+2023-07-28 09:39:34,292 INFO Data published
+2023-07-28 09:39:36,788 INFO MQQT answer Win
+
+2023-07-28 09:40:50,117 INFO Successful connection: ('192.168.220.3', 53882)
+2023-07-28 09:40:50,118 INFO Request: GET, /device, HTTP/1.0, 10.0.41.250
+2023-07-28 09:40:50,118 INFO Successful request parsing
+2023-07-28 09:40:50,118 INFO Send b'p' to topic /Instructions
+2023-07-28 09:40:50,118 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:40:50,119 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:40:50,124 INFO Data published
+2023-07-28 09:40:50,124 INFO Data published
+2023-07-28 09:40:56,629 INFO MQQT answer Win
+
+2023-07-28 09:43:10,917 INFO Successful connection: ('192.168.220.3', 41224)
+2023-07-28 09:43:10,917 INFO Request: GET, /device, HTTP/1.0, 10.0.41.250
+2023-07-28 09:43:10,917 INFO Successful request parsing
+2023-07-28 09:43:10,918 INFO Send b'p' to topic /Instructions
+2023-07-28 09:43:10,918 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:43:10,918 INFO Data published
+2023-07-28 09:43:10,919 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:43:10,919 INFO Data published
+2023-07-28 09:43:15,632 INFO MQQT answer Win
+
+2023-07-28 09:45:34,534 INFO Successful connection: ('192.168.220.3', 37322)
+2023-07-28 09:45:34,535 INFO Request: GET, /device, HTTP/1.0, 10.0.41.250
+2023-07-28 09:45:34,535 INFO Successful request parsing
+2023-07-28 09:45:34,535 INFO Send b'p' to topic /Instructions
+2023-07-28 09:45:34,536 INFO HTTP message: Topic: /Instructions, Info: b'\x08'
+2023-07-28 09:45:34,536 INFO Data published
+2023-07-28 09:45:34,536 INFO Send b'\x08' to topic /Instructions
+2023-07-28 09:45:34,536 INFO Data published
+2023-07-28 09:45:37,691 INFO MQQT answer Win
+
+2023-07-28 09:46:03,360 INFO Successful connection: ('192.168.220.3', 39682)
+2023-07-28 09:46:03,361 INFO Request: GET, /device, HTTP/1.0, 10.0.41.250
+2023-07-28 09:46:03,361 INFO Successful request parsing
+2023-07-28 09:46:03,361 INFO Send b'p' to topic /Instructions
+2023-07-28 09:46:03,362 INFO HTTP message: Topic: /Instructions, Info: b'\x04'
+2023-07-28 09:46:03,362 INFO Data published
+2023-07-28 09:46:03,362 INFO Send b'\x04' to topic /Instructions
+2023-07-28 09:46:03,362 INFO Data published
+2023-07-28 09:46:06,243 INFO MQQT answer Win
+
+2023-07-28 09:48:07,143 INFO Successful connection: ('192.168.220.3', 60850)
+2023-07-28 09:48:07,144 INFO Request: GET, /device, HTTP/1.0, 10.0.41.250
+2023-07-28 09:48:07,144 INFO Successful request parsing
+2023-07-28 09:48:07,145 INFO Send b'p' to topic /Instructions
+2023-07-28 09:48:07,145 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:48:07,145 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:48:07,150 INFO Data published
+2023-07-28 09:48:07,150 INFO Data published
+2023-07-28 09:48:16,597 INFO MQQT answer Win
+
+2023-07-28 09:51:13,695 INFO Successful connection: ('192.168.220.3', 60008)
+2023-07-28 09:51:13,695 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:51:13,696 INFO Successful request parsing
+2023-07-28 09:51:13,696 INFO Send b'p' to topic /Instructions
+2023-07-28 09:51:13,696 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:51:13,696 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:51:13,707 INFO Data published
+2023-07-28 09:51:13,712 INFO Data published
+2023-07-28 09:51:15,211 INFO MQQT answer Win
+
+2023-07-28 09:51:22,567 INFO Successful connection: ('192.168.220.3', 59874)
+2023-07-28 09:51:22,568 ERROR Erorr: Incorrect request line
+Traceback (most recent call last):
+  File "/app/http_server.py", line 94, in server_client
+    request = self.parse_request(socket)
+  File "/app/http_server.py", line 112, in parse_request
+    method, uri, version = self.parse_request_line(rfile)
+  File "/app/http_server.py", line 188, in parse_request_line
+    raise Exception('Incorrect request line')
+Exception: Incorrect request line
+2023-07-28 09:51:22,568 ERROR Client serving failed ('192.168.220.3', 59874)
+Traceback (most recent call last):
+  File "/app/http_server.py", line 94, in server_client
+    request = self.parse_request(socket)
+  File "/app/http_server.py", line 112, in parse_request
+    method, uri, version = self.parse_request_line(rfile)
+  File "/app/http_server.py", line 188, in parse_request_line
+    raise Exception('Incorrect request line')
+Exception: Incorrect request line
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/http_server.py", line 81, in server_enable
+    self.server_client(new_socket)
+  File "/app/http_server.py", line 106, in server_client
+    self.send_error(socket, e)
+AttributeError: 'Server' object has no attribute 'send_error'
+2023-07-28 09:51:25,699 INFO Successful connection: ('192.168.220.3', 59882)
+2023-07-28 09:51:25,700 INFO Request: GET, /device, HTTP/1.0, 10.0.41.241
+2023-07-28 09:51:25,700 INFO Successful request parsing
+2023-07-28 09:51:25,700 INFO Send b'p' to topic /Instructions
+2023-07-28 09:51:25,700 INFO HTTP message: Topic: /Instructions, Info: b'\x06'
+2023-07-28 09:51:25,701 INFO Send b'\x06' to topic /Instructions
+2023-07-28 09:51:25,701 INFO Data published
+2023-07-28 09:51:25,707 INFO Data published
+2023-07-28 09:51:26,480 INFO MQQT answer Win
 
